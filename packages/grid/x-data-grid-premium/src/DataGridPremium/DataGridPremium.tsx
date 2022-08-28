@@ -40,7 +40,7 @@ const DataGridPremiumRaw = React.forwardRef(function DataGridPremium<R extends G
             ColumnHeadersComponent={DataGridProColumnHeaders}
             VirtualScrollerComponent={DataGridProVirtualScroller}
           >
-            <Watermark packageName="x-data-grid-premium" releaseInfo={releaseInfo} />
+            {/* <Watermark packageName="x-data-grid-premium" releaseInfo={releaseInfo} /> */}
           </GridBody>
           <GridFooterPlaceholder />
         </GridErrorHandler>

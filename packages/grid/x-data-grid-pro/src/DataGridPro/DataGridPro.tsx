@@ -832,7 +832,7 @@ DataGridProRaw.propTypes = {
    */
   rowThreshold: PropTypes.number,
   /**
-   * Override the height/width of the grid inner scrollbar.
+   * Override the height/width of the grid inner scrollbar
    */
   scrollbarSize: PropTypes.number,
   /**
