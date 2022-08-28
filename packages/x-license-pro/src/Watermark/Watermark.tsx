@@ -13,7 +13,7 @@ import * as React from 'react';
 //     default:
 //       throw new Error('MUI: Unhandled MUI X license status.');
 //   }
-}
+// }
 
 // interface WatermarkProps {
 //   packageName: MuiCommercialPackageName;
