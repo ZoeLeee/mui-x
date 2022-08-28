@@ -1,6 +1,6 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { useLicenseVerifier, Watermark } from '@mui/x-license-pro';
+// import { useLicenseVerifier } from '@mui/x-license-pro';
 import { chainPropTypes } from '@mui/utils';
 import {
   GridBody,
@@ -18,9 +18,9 @@ import {
 import { useDataGridPremiumComponent } from './useDataGridPremiumComponent';
 import { DataGridPremiumProps } from '../models/dataGridPremiumProps';
 import { useDataGridPremiumProps } from './useDataGridPremiumProps';
-import { getReleaseInfo } from '../utils/releaseInfo';
+// import { getReleaseInfo } from '../utils/releaseInfo';
 
-const releaseInfo = getReleaseInfo();
+// const releaseInfo = getReleaseInfo();
 
 const DataGridPremiumRaw = React.forwardRef(function DataGridPremium<R extends GridValidRowModel>(
   inProps: DataGridPremiumProps<R>,
@@ -29,7 +29,7 @@ const DataGridPremiumRaw = React.forwardRef(function DataGridPremium<R extends G
   const props = useDataGridPremiumProps(inProps);
   const apiRef = useDataGridPremiumComponent(props.apiRef, props);
 
-  useLicenseVerifier('x-data-grid-premium', releaseInfo);
+  // useLicenseVerifier('x-data-grid-premium', releaseInfo);
 
   return (
     <GridContextProvider apiRef={apiRef} props={props}>

@@ -12,7 +12,9 @@ function GridErrorHandler(props: { children: React.ReactNode }) {
   const logger = useGridLogger(apiRef, 'GridErrorHandler');
   const rootProps = useGridRootProps();
   const error = apiRef.current.state.error;
+  console.error('error: ', error);
 
+  return <React.Fragment>{children}</React.Fragment>;
   return (
     <ErrorBoundary
       hasError={error != null}
